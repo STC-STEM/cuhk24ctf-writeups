@@ -153,7 +153,7 @@ Found the clear text 3990812023857504567; key used is 0xa2d288c3
 
 There are multiple key which could successfully decrypt the first block of the ciphertext into the same result. Upon checking, I found that these key actually produce the same result for every block of the ciphertext (due to reasons that cannot be explained by my current knowledge in cryptography). In particular, the number of possible keys are always `2^n`: sometime it is 128, sometime 64 or less.
 
-The brute-force program takes around 15 minutes to run. Ny repeating the brute-force program 8 times, the original flag can be found.
+The brute-force program takes around 15 minutes to run. By repeating the brute-force program 8 times, the original flag can be found.
 
 ```[python]
 _nthKeys = []
