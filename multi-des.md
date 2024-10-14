@@ -56,6 +56,8 @@ To increase the brute force speed, I chose to write the program in C instead of 
 
 ```[c]
 // Using an implementation found on github
+// https://github.com/dhuertas/DES/blob/master/des.c
+// See the source file in the folder
 uint64_t des(uint64_t input, uint64_t key, char mode) {
     // ...
 }
@@ -135,7 +137,17 @@ cipherText="0x3110d75d5887aa0f"
 ./brute ${cipherText} 268435456 536870912 out1.txt &
 ./brute ${cipherText} 536870912 805306368 out2.txt &
 ./brute ${cipherText} 805306368 1073741824 out3.txt &
-...
+./brute ${cipherText} 1073741824 1342177280 out4.txt &
+./brute ${cipherText} 1342177280 1610612736 out5.txt &
+./brute ${cipherText} 1610612736 1879048192 out6.txt &
+./brute ${cipherText} 1879048192 2147483648 out7.txt &
+./brute ${cipherText} 2147483648 2415919104 out8.txt &
+./brute ${cipherText} 2415919104 2684354560 out9.txt &
+./brute ${cipherText} 2684354560 2952790016 out10.txt &
+./brute ${cipherText} 2952790016 3221225472 out11.txt &
+./brute ${cipherText} 3221225472 3489660928 out12.txt &
+./brute ${cipherText} 3489660928 3758096384 out13.txt &
+./brute ${cipherText} 3758096384 4026531840 out14.txt &
 ./brute ${cipherText} 4026531840 4294967296 out15.txt
 ```
 
