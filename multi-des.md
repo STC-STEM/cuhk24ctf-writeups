@@ -187,3 +187,8 @@ cipher = DES.new(_nthKeys[0], DES.MODE_ECB)
 for i in range(0, len(nthIterCipher), 8):
     print(cipher.decrypt(nthIterCipher[i:i + 8]))
 ```
+
+Here are the keys used for encrypting the original file (`key[0]` is for the first iteration)
+```[python]
+keys = [b'ad6db4af', b'f5f9b0c2', b'93d7dafd', b'96a8fa67', b'f91d9d50', b'ec9f005d', b'a2d289b2']
+```
