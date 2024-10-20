@@ -1,0 +1,4 @@
+# what can i say...
+nc chal.24.cuhkctf.org 24040
+su
+cat flag
